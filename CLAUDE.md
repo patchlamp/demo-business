@@ -1,7 +1,7 @@
 # Quarry Street Bikes — website (demo-business)
 
 This repo IS the website for Quarry Street Bikes. There is no dashboard and no CMS: you
-change the site by editing these files and pushing. Live at https://demo-business.pages.dev/.
+change the site by editing these files and pushing. Live at https://demo-business-ctm.pages.dev/.
 
 How to talk to the client, how texted photos arrive (`incoming/`, one level
 up), and what counts as Taylor's work are all in the workspace `CLAUDE.md`
@@ -60,7 +60,7 @@ how to change it, and how to check a change is live.
 
 ## Every change goes live — deploy check
 
-"Done" means live at https://demo-business.pages.dev/, not edited on disk. Relay sessions run from the
+"Done" means live at https://demo-business-ctm.pages.dev/, not edited on disk. Relay sessions run from the
 client workspace one level up, so git takes the form
 `git -C repos/demo-business …`; never `cd` into the repo first (that is always
 blocked). After any requested change, without waiting to be asked:
@@ -80,9 +80,9 @@ blocked). After any requested change, without waiting to be asked:
 5. Confirm the live site serves the change, with exactly this shape (no
    pipe, no redirect):
 
-       curl -s https://demo-business.pages.dev/PAGE.html
+       curl -s https://demo-business-ctm.pages.dev/PAGE.html
 
-   (for the home page, `curl -s https://demo-business.pages.dev/`). Read the output and look for the
+   (for the home page, `curl -s https://demo-business-ctm.pages.dev/`). Read the output and look for the
    new content yourself. Only say it's live once you have seen it there.
    There is no cache to wait out: every page is served `no-cache`, so a
    phone that reloads sees the new page.

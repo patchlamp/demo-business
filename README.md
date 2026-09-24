@@ -1,7 +1,7 @@
 # Quarry Street Bikes — website
 
 The website for Quarry Street Bikes. Plain HTML/CSS/JS with no build step: every file
-here is served exactly as it is, by Cloudflare Pages, at https://demo-business.pages.dev/.
+here is served exactly as it is, by Cloudflare Pages, at https://demo-business-ctm.pages.dev/.
 
 To preview it on your own machine, run `python3 -m http.server` in this
 folder and open http://localhost:8000. To change anything, see `CLAUDE.md`:
