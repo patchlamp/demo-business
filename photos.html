@@ -4,10 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Photos — Quarry Street Bikes</title>
-  <meta name="description" content="Photos from Quarry Street Bikes.">
+  <meta name="description" content="Photos from Quarry Street Bikes, Patchlamp's demo business.">
+  <meta name="robots" content="noindex">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <p class="demo-bar">
+    <strong>This is a demo.</strong> Quarry Street Bikes is not a real business — it is
+    <a href="https://patchlamp.com/">Patchlamp's</a> business demo. Text the demo number and whatever you ask for changes this site, usually in under a minute. It resets every night.
+  </p>
 
   <header class="site-header">
     <a class="wordmark" href="index.html">Quarry Street Bikes</a>
@@ -26,33 +32,18 @@
       <div class="section-inner reveal">
         <p class="kicker">Gallery</p>
         <h2>Pictures</h2>
-
-        <!-- Each photo is one <li>. To add one, put the JPG in images/, copy a
-             whole <li>…</li> block, and change the src and alt. See CLAUDE.md,
-             "How to add a photo". Delete the "coming soon" line once there is
-             at least one photo. -->
-        <p class="muted" id="no-photos">Photos coming soon.</p>
         <ul class="photo-grid">
-          <!--
-          <li>
-            <a href="images/example.jpg">
-              <img src="images/example.jpg" width="1200" height="1200" loading="lazy"
-                   alt="A short plain description of what is in the photo.">
-            </a>
-          </li>
-          -->
+          <li><svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The workshop stand, drawn simply"><rect width="400" height="300" fill="#e6e1d8"/><path d="M200 260 V120 M150 260 H250 M200 120 L260 90" stroke="#1d1b17" stroke-width="10" stroke-linecap="round"/><circle cx="280" cy="90" r="30" fill="none" stroke="#b4532a" stroke-width="8"/></svg><p class="muted">The repair stand</p></li>
+          <li><svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A row of used bikes, drawn simply"><rect width="400" height="300" fill="#efeae1"/><circle cx="90" cy="200" r="40" fill="none" stroke="#1d1b17" stroke-width="7"/><circle cx="200" cy="200" r="40" fill="none" stroke="#1d1b17" stroke-width="7"/><circle cx="310" cy="200" r="40" fill="none" stroke="#1d1b17" stroke-width="7"/><path d="M60 120 H340" stroke="#b4532a" stroke-width="8"/></svg><p class="muted">Used bikes out front</p></li>
+          <li><svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tools on a pegboard, drawn simply"><rect width="400" height="300" fill="#e3ddd2"/><path d="M100 80 V220 M160 80 V180 M220 80 V200 M280 80 V160" stroke="#1d1b17" stroke-width="10" stroke-linecap="round"/><circle cx="280" cy="180" r="18" fill="#b4532a"/></svg><p class="muted">The tool wall</p></li>
         </ul>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <!-- Keep this footer identical to the one in index.html. -->
-    <ul class="footer-links">
-      <li><a href="https://instagram.com/">Instagram</a></li>
-      <li><a href="https://facebook.com/">Facebook</a></li>
-    </ul>
-    <p class="copyright">&copy; 2026 Quarry Street Bikes</p>
+    <!-- Keep this footer identical on every page. -->
+    <p class="copyright">&copy; 2026 Quarry Street Bikes · a demo by <a href="https://patchlamp.com/">Patchlamp</a></p>
   </footer>
 
   <script src="js/main.js"></script>
