@@ -6,10 +6,12 @@
   <title>Quarry Street Bikes — Patchlamp's business demo</title>
   <meta name="description" content="Quarry Street Bikes is Patchlamp's demo small business: a brochure site anyone can change by text. Not a real shop.">
   <meta name="robots" content="noindex">
+  <!-- The pages are rendered from site.json by `site render` (lib/sitegen.py): change site.json, never this file. -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/look.css">
+  <script src="js/motion.js" defer></script>
 </head>
-<body>
-
+<body class="page-home">
   <p class="demo-bar">
     <strong>This is a demo.</strong> Quarry Street Bikes is not a real business — it is
     <a href="https://patchlamp.com/">Patchlamp's</a> business demo. Text the demo number and whatever you ask for changes this site, usually in under a minute. It resets every night.
@@ -18,64 +20,64 @@
   <header class="site-header">
     <a class="wordmark" href="index.html">Quarry Street Bikes</a>
     <nav class="site-nav" aria-label="Site">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="photos.html">Photos</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#details">Hours</a>
     </nav>
+    <a class="header-cta" href="#details"><span class="cta-full">Find us</span><span class="cta-short">Find us</span></a>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1 class="hero-title">Quarry Street Bikes</h1>
-      <p class="hero-tagline">Repairs, tune-ups and good used bikes.</p>
+  <main id="top">
+    <section class="hero-block hero--split has-image" id="hero">
+      <figure class="hero-media">
+        <picture><source type="image/avif" srcset="images/hero-31452612-800.avif 800w, images/hero-31452612-1600.avif 1600w" sizes="100vw"><source type="image/webp" srcset="images/hero-31452612-800.webp 800w, images/hero-31452612-1600.webp 1600w" sizes="100vw"><img src="images/hero-31452612-1600.jpg" srcset="images/hero-31452612-800.jpg 800w, images/hero-31452612-1600.jpg 1600w" sizes="100vw" width="1600" height="900" alt="A cozy bicycle workshop in Amsterdam viewed through a window with bicycles hanging inside." loading="eager" fetchpriority="high" decoding="async"></picture><span class="img-label">Stock photo</span>
+      </figure>
+      <div class="hero-copy">
+        <h1 class="hero-heading">Repairs, tune-ups and good used bikes.</h1>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#details">Find us</a>
+        </div>
+        <p class="hero-note">Open Tue–Fri 10am–6pm · Sat 9am–4pm</p>
+      </div>
     </section>
-
-    <section class="section" id="about">
-      <div class="section-inner reveal">
+    <section class="proof proof--strip" aria-label="At a glance">
+      <ul class="proof-list">
+        <li>Flat fixes while you wait</li>
+        <li>Proper tune-ups</li>
+        <li>Good used bikes out front</li>
+      </ul>
+    </section>
+    <section class="section about about--band band" id="about">
+      <div class="section-inner">
         <div class="about-grid">
-          <!-- Main photo. To set it, put a JPG in images/ and change the
-               src and alt here (see CLAUDE.md, "How to add a photo"). Until
-               there is one, this figure shows a plain placeholder. -->
-          <figure class="about-photo">
-            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img"
-                 aria-label="A bicycle, drawn simply">
-              <rect width="400" height="400" fill="#e6e1d8"/>
-              <circle cx="120" cy="250" r="70" fill="none" stroke="#1d1b17" stroke-width="10"/>
-              <circle cx="280" cy="250" r="70" fill="none" stroke="#1d1b17" stroke-width="10"/>
-              <path d="M120 250 L180 170 L250 170 L280 250 M180 170 L210 250 L120 250 M250 170 L240 140 M165 150 H200" fill="none" stroke="#b4532a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </figure>
-          <div class="about-text">
-            <p class="kicker">About</p>
-            <h2>Who we are</h2>
-            <p class="lede">Quarry Street Bikes is a made-up neighbourhood bike shop: flat fixes while you wait,
-            proper tune-ups, and a rack of good used bikes out front.</p>
-            <p class="muted">It isn't real — it's the demo of the plain business site Patchlamp builds. Text a change
-            ("we're closed Monday", "add e-bike repairs") and watch it land here.</p>
-            <div class="button-row">
-              <a class="button" href="photos.html">See photos</a>
-              <a class="button" href="#details">Find us</a>
+          <div class="about-copy">
+            <div class="about-head">
+              <h2>Who we are</h2>
+            </div>
+            <div class="about-body">
+              <p class="lede">Quarry Street Bikes is a made-up neighbourhood bike shop: flat fixes while you wait, proper tune-ups, and a rack of good used bikes out front.</p>
+              <p class="">It isn't real — it's the demo of the plain business site Patchlamp builds. Text a change (“we're closed Monday”, “add e-bike repairs”) and watch it land here.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="section" id="details">
-      <div class="section-inner reveal">
-        <p class="kicker">Details</p>
-        <h2>Find us</h2>
+    <section class="section details details--columns alt" id="details">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Find us</h2>
+        </div>
         <div class="details-grid">
           <div>
-            <h3>Where</h3>
-            <p>A made-up shop, so no address. The real version says where to find it.</p>
-          </div>
-          <div>
             <h3>Hours</h3>
-            <ul>
+            <ul class="hours">
               <li>Tue–Fri: 10am–6pm</li>
               <li>Sat: 9am–4pm</li>
               <li>Sun–Mon: closed</li>
             </ul>
+          </div>
+          <div>
+            <h3>Where</h3>
+            <p>A made-up shop, so no address. The real version says where to find it.</p>
           </div>
           <div>
             <h3>Contact</h3>
@@ -84,16 +86,14 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <!-- Keep this footer identical on every page. -->
-    <p class="copyright">&copy; 2026 Quarry Street Bikes · a demo by <a href="https://patchlamp.com/">Patchlamp</a></p>
+    <p class="copyright">&copy; 2026 Quarry Street Bikes</p>
     <p class="patchlamp-badge"><a href="https://patchlamp.com/?from=badge" rel="noopener">Patched by Patchlamp</a></p>
     <script src="https://patchlamp.com/s/site-chat.js" data-site="demo-business" crossorigin="anonymous" defer></script>
     <script src="https://patchlamp.com/hit.js" data-site="demo-business" crossorigin="anonymous" defer></script>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
